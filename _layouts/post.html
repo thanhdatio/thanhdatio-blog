@@ -1,0 +1,22 @@
+---
+layout: default
+---
+<article class="post-content">
+    <div class="container">
+        <header class="post-header">
+            {% if page.image %}
+            <img src="{{ page.image }}" alt="{{ page.title }}" class="post-featured-image">
+            {% else %}
+            <img src="/assets/images/blog-default.jpg" alt="{{ page.title }}" class="post-featured-image"> {# Placeholder if no image is defined #}
+            {% endif %}
+            <h1 class="post-title">{{ page.title }}</h1>
+            <div class="post-meta">
+                <span class="post-category">{% if page.category %}{{ page.category }}{% else %}Tổng hợp{% endif %}</span>
+                <span class="post-date">{{ page.date | date: "%d/%m/%Y" }}</span>
+            </div>
+        </header>
+        <div class="post-body">
+            {{ content }}
+        </div>
+    </div>
+</article>
