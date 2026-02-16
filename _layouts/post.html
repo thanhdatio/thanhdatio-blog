@@ -11,7 +11,7 @@ layout: default
             {% endif %}
             <h1 class="post-title">{{ page.title }}</h1>
             <div class="post-meta">
-                <span class="post-category">{% if page.category %}{{ page.category }}{% else %}Tổng hợp{% endif %}</span>
+                <span class="post-category">{% if page.categories %}{{ page.categories | join: ", " }}{% else %}Tổng hợp{% endif %}</span>
                 <span class="post-date">{{ page.date | date: "%d/%m/%Y" }}</span>
             </div>
         </header>

@@ -23,7 +23,7 @@ description: Nơi chia sẻ kiến thức chuyên sâu về Trí tuệ nhân t�
                 {% endif %}
                 <div class="blog-info">
                     <h3>{{ post.title }}</h3>
-                    <p class="blog-meta">{% if post.category %}{{ post.category }}{% else %}Tổng hợp{% endif %} · {{ post.date | date: "%d/%m/%Y" }}</p>
+                    <p class="blog-meta">{% if post.categories %}{{ post.categories | join: ", " }}{% else %}Tổng hợp{% endif %} · {{ post.date | date: "%d/%m/%Y" }}</p>
                 </div>
             </a>
             {% endfor %}

@@ -3,7 +3,7 @@ title: ThanhDat.IO Blog
 email: datchuthanh@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Nơi chia sẻ kiến thức chuyên sâu về Trí tuệ nhân tạo (AI), Tự động hóa và các xu hướng công nghệ mới nhất của Chu Thành Đạt.
-baseurl: "/thanhdatio-blog" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  thanhdatio
 
